@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bill Payment</title>
+          <meta charset="UTF-8">
+          <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+          <meta name="description" content="Laundry Walaa Bill Generator">
+          <meta name="viewport" content="width=device-width , initial-scale=1, user-scalable = 0">
+          <link rel="stylesheet" href="index.css"/>
+    </head>
+    
+    <body>
+     <h1>LAUNDRY WALAA</h1>
+   <!-----------TAKING NAME AND MOILE NO. OF THE CUSTOMERS TO VIEW ON BILL------------>
+     <h3>Customer Details:</h3>
+     <input type="text" placeholder="Customer's Name" id="Inpname"> 
+     <input type="text" placeholder="Customer's Mobile No." id="Inpmob">
+   <!-----------Selecting the type of laundry service the customer pays ------------>
+     <h3>Select Service:</h3>
+     <div class="service-container"><!---TO SHOW THE SERVICES CLEANLY ON SCREEN--->
+     <div class="services" id="iron-box">Iron</div>
+     <div class="services" id="nwash-box">Normal Wash</div>
+     <div class="services" id="owash-box">Organic Wash</div>
+     <div class="services" id="pwash-box">Premium Wash</div>
+     <div class="services" id="dryclean-box">Dry Clean</div>
+     </div>
+     <!------ADDING THE ITEMS FOR THE CART------>
+      <div id="iron-cart">  <!----IRON CART----> 
+        <p>Shirt/T-shirt(Rs 07) <span class="decrement-unicode" id="dec1">&minus;</span> <span class="no-of-item" id="no-of-item1">0</span> <span class="increment-unicode" id="inc1">&plus;</span></p>
+        <p>Jeans/Formal(Rs 07) <span class="decrement-unicode" id="dec2">&minus;</span> <span class="no-of-item" id="no-of-item2">0</span> <span class="increment-unicode" id="inc2">&plus;</span></p>
+        <p>Shorts(Rs 05) <span class="decrement-unicode" id="dec3">&minus;</span> <span class="no-of-item" id="no-of-item3">0</span> <span class="increment-unicode" id="inc3">&plus;</span></p>
+        <p>Trouser/Track pant(Rs 07) <span class="decrement-unicode" id="dec4">&minus;</span> <span class="no-of-item" id="no-of-item4">0</span> <span class="increment-unicode" id="inc4">&plus;</span></p>
+        <p>Kurta(set)(Rs 20) <span class="decrement-unicode" id="dec5">&minus;</span> <span class="no-of-item" id="no-of-item5">0</span> <span class="increment-unicode" id="inc5">&plus;</span></p>
+        <p>Kurta(Rs 15) <span class="decrement-unicode" id="dec6">&minus;</span> <span class="no-of-item" id="no-of-item6">0</span> <span class="increment-unicode" id="inc6">&plus;</span></p>
+        <p>Paijama(Rs 07) <span class="decrement-unicode" id="dec7">&minus;</span> <span class="no-of-item" id="no-of-item7">0</span> <span class="increment-unicode" id="inc7">&plus;</span></p>
+        <p>Kurti(set)(Rs 20) <span class="decrement-unicode" id="dec8">&minus;</span> <span class="no-of-item" id="no-of-item8">0</span> <span class="increment-unicode" id="inc8">&plus;</span></p>
+        <p>Kurti(Rs 20) <span class="decrement-unicode" id="dec9">&minus;</span> <span class="no-of-item" id="no-of-item9">0</span> <span class="increment-unicode" id="inc9">&plus;</span></p>
+        <p>Dupatta(Rs 05) <span class="decrement-unicode" id="dec10">&minus;</span> <span class="no-of-item" id="no-of-item10">0</span> <span class="increment-unicode" id="inc10">&plus;</span></p>
+        <p>Saree m/h(Rs 20) <span class="decrement-unicode" id="dec11">&minus;</span> <span class="no-of-item" id="no-of-item11">0</span> <span class="increment-unicode" id="inc11">&plus;</span></p>
+        <p>Saree Heavy(Rs 30) <span class="decrement-unicode" id="dec12">&minus;</span> <span class="no-of-item" id="no-of-item12">0</span> <span class="increment-unicode" id="inc12">&plus;</span></p>
+        <p>Leggings(Rs 05) <span class="decrement-unicode" id="dec13">&minus;</span> <span class="no-of-item" id="no-of-item13">0</span> <span class="increment-unicode" id="inc13">&plus;</span></p>
+        <p>Salwar Suit(Rs 20) <span class="decrement-unicode" id="dec14">&minus;</span> <span class="no-of-item" id="no-of-item14">0</span> <span class="increment-unicode" id="inc14">&plus;</span></p>
+        <p>Bed Sheet(Rs 10) <span class="decrement-unicode" id="dec15">&minus;</span> <span class="no-of-item" id="no-of-item15">0</span> <span class="increment-unicode" id="inc15">&plus;</span></p>
+        <p>Towel(Rs 05) <span class="decrement-unicode" id="dec16">&minus;</span> <span class="no-of-item" id="no-of-item16">0</span> <span class="increment-unicode" id="inc16">&plus;</span></p>
+        <p>Pillow Cover(Rs 01) <span class="decrement-unicode" id="dec17">&minus;</span> <span class="no-of-item" id="no-of-item17">0</span> <span class="increment-unicode" id="inc17">&plus;</span></p>
+      </div> 
+      <div id="nwash-cart">  <!----NORMAL WASH CART----> 
+        <p>Shirt/T-shirt(Rs 06) <span class="decrement-unicode" id="dec18">&minus;</span> <span class="no-of-item" id="no-of-item18">0</span> <span class="increment-unicode" id="inc18">&plus;</span></p>
+        <p>Jeans/Formal(Rs 07) <span class="decrement-unicode" id="dec19">&minus;</span> <span class="no-of-item" id="no-of-item19">0</span> <span class="increment-unicode" id="inc19">&plus;</span></p>
+        <p>Shorts(Rs 05) <span class="decrement-unicode" id="dec20">&minus;</span> <span class="no-of-item" id="no-of-item20">0</span> <span class="increment-unicode" id="inc20">&plus;</span></p>
+        <p>Trouser/Track pant(Rs 07) <span class="decrement-unicode" id="dec21">&minus;</span> <span class="no-of-item" id="no-of-item21">0</span> <span class="increment-unicode" id="inc21">&plus;</span></p>
+        <p>Kurta(set)(Rs 39) <span class="decrement-unicode" id="dec22">&minus;</span> <span class="no-of-item" id="no-of-item22">0</span> <span class="increment-unicode" id="inc22">&plus;</span></p>
+        <p>Kurta(Rs 29) <span class="decrement-unicode" id="dec23">&minus;</span> <span class="no-of-item" id="no-of-item23">0</span> <span class="increment-unicode" id="inc23">&plus;</span></p>
+        <p>Paijama(Rs 07) <span class="decrement-unicode" id="dec24">&minus;</span> <span class="no-of-item" id="no-of-item24">0</span> <span class="increment-unicode" id="inc24">&plus;</span></p>
+        <p>Kurti(set)(Rs 39) <span class="decrement-unicode" id="dec25">&minus;</span> <span class="no-of-item" id="no-of-item25">0</span> <span class="increment-unicode" id="inc25">&plus;</span></p>
+        <p>Kurti(Rs 29) <span class="decrement-unicode" id="dec26">&minus;</span> <span class="no-of-item" id="no-of-item26">0</span> <span class="increment-unicode" id="inc26">&plus;</span></p>
+        <p>Dupatta(Rs 05) <span class="decrement-unicode" id="dec27">&minus;</span> <span class="no-of-item" id="no-of-item27">0</span> <span class="increment-unicode" id="inc27">&plus;</span></p>
+        <p>Saree m/h(Rs 39) <span class="decrement-unicode" id="dec28">&minus;</span> <span class="no-of-item" id="no-of-item28">0</span> <span class="increment-unicode" id="inc28">&plus;</span></p>
+        <p>Saree Heavy(Rs 59) <span class="decrement-unicode" id="dec29">&minus;</span> <span class="no-of-item" id="no-of-item29">0</span> <span class="increment-unicode" id="inc29">&plus;</span></p>
+        <p>Leggings(Rs 10) <span class="decrement-unicode" id="dec30">&minus;</span> <span class="no-of-item" id="no-of-item30">0</span> <span class="increment-unicode" id="inc30">&plus;</span></p>
+        <p>Salwar Suit(Rs 39) <span class="decrement-unicode" id="dec31">&minus;</span> <span class="no-of-item" id="no-of-item31">0</span> <span class="increment-unicode" id="inc31">&plus;</span></p>
+        <p>Bed Sheet(Rs 20) <span class="decrement-unicode" id="dec32">&minus;</span> <span class="no-of-item" id="no-of-item32">0</span> <span class="increment-unicode" id="inc32">&plus;</span></p>
+        <p>Towel(Rs 10) <span class="decrement-unicode" id="dec33">&minus;</span> <span class="no-of-item" id="no-of-item33">0</span> <span class="increment-unicode" id="inc33">&plus;</span></p>
+        <p>Pillow Cover(Rs 05) <span class="decrement-unicode" id="dec34">&minus;</span> <span class="no-of-item" id="no-of-item34">0</span> <span class="increment-unicode" id="inc34">&plus;</span></p>
+      </div> 
+      <div id="owash-cart">  <!----ORGANIC WASH CART----> 
+        <p>Shirt/T-shirt(Rs 12) <span class="decrement-unicode" id="dec35">&minus;</span> <span class="no-of-item" id="no-of-item35">0</span> <span class="increment-unicode" id="inc35">&plus;</span></p>
+        <p>Jeans/Formal(Rs 12) <span class="decrement-unicode" id="dec36">&minus;</span> <span class="no-of-item" id="no-of-item36">0</span> <span class="increment-unicode" id="inc36">&plus;</span></p>
+        <p>Shorts(Rs 10) <span class="decrement-unicode" id="dec37">&minus;</span> <span class="no-of-item" id="no-of-item37">0</span> <span class="increment-unicode" id="inc37">&plus;</span></p>
+        <p>Trouser/Track pant(Rs 12) <span class="decrement-unicode" id="dec38">&minus;</span> <span class="no-of-item" id="no-of-item38">0</span> <span class="increment-unicode" id="inc38">&plus;</span></p>
+        <p>Kurta(set)(Rs 49) <span class="decrement-unicode" id="dec39">&minus;</span> <span class="no-of-item" id="no-of-item39">0</span> <span class="increment-unicode" id="inc39">&plus;</span></p>
+        <p>Kurta(Rs 39) <span class="decrement-unicode" id="dec40">&minus;</span> <span class="no-of-item" id="no-of-item40">0</span> <span class="increment-unicode" id="inc40">&plus;</span></p>
+        <p>Paijama(Rs 12) <span class="decrement-unicode" id="dec41">&minus;</span> <span class="no-of-item" id="no-of-item41">0</span> <span class="increment-unicode" id="inc41">&plus;</span></p>
+        <p>Kurti(set)(Rs 49) <span class="decrement-unicode" id="dec42">&minus;</span> <span class="no-of-item" id="no-of-item42">0</span> <span class="increment-unicode" id="inc42">&plus;</span></p>
+        <p>Kurti(Rs 39) <span class="decrement-unicode" id="dec43">&minus;</span> <span class="no-of-item" id="no-of-item43">0</span> <span class="increment-unicode" id="inc43">&plus;</span></p>
+        <p>Dupatta(Rs 10) <span class="decrement-unicode" id="dec44">&minus;</span> <span class="no-of-item" id="no-of-item44">0</span> <span class="increment-unicode" id="inc44">&plus;</span></p>
+        <p>Saree m/h(Rs 49) <span class="decrement-unicode" id="dec45">&minus;</span> <span class="no-of-item" id="no-of-item45">0</span> <span class="increment-unicode" id="inc45">&plus;</span></p>
+        <p>Saree Heavy(Rs 69) <span class="decrement-unicode" id="dec46">&minus;</span> <span class="no-of-item" id="no-of-item46">0</span> <span class="increment-unicode" id="inc46">&plus;</span></p>
+        <p>Leggings(Rs 15) <span class="decrement-unicode" id="dec47">&minus;</span> <span class="no-of-item" id="no-of-item47">0</span> <span class="increment-unicode" id="inc47">&plus;</span></p>
+        <p>Salwar Suit(Rs 49) <span class="decrement-unicode" id="dec48">&minus;</span> <span class="no-of-item" id="no-of-item48">0</span> <span class="increment-unicode" id="inc48">&plus;</span></p>
+        <p>Bed Sheet(Rs 30) <span class="decrement-unicode" id="dec49">&minus;</span> <span class="no-of-item" id="no-of-item49">0</span> <span class="increment-unicode" id="inc49">&plus;</span></p>
+        <p>Towel(Rs 15) <span class="decrement-unicode" id="dec50">&minus;</span> <span class="no-of-item" id="no-of-item50">0</span> <span class="increment-unicode" id="inc50">&plus;</span></p>
+        <p>Pillow Cover(Rs 10) <span class="decrement-unicode" id="dec51">&minus;</span> <span class="no-of-item" id="no-of-item51">0</span> <span class="increment-unicode" id="inc51">&plus;</span></p>
+      </div> 
+      <div id="pwash-cart">  <!----PREMIUM WASH CART----> 
+        <p>Shirt/T-shirt(Rs 12) <span class="decrement-unicode" id="dec52">&minus;</span> <span class="no-of-item" id="no-of-item52">0</span> <span class="increment-unicode" id="inc52">&plus;</span></p>
+        <p>Jeans/Formal(Rs 12) <span class="decrement-unicode" id="dec53">&minus;</span> <span class="no-of-item" id="no-of-item53">0</span> <span class="increment-unicode" id="inc53">&plus;</span></p>
+        <p>Shorts(Rs 10) <span class="decrement-unicode" id="dec54">&minus;</span> <span class="no-of-item" id="no-of-item54">0</span> <span class="increment-unicode" id="inc54">&plus;</span></p>
+        <p>Trouser/Track pant(Rs 12) <span class="decrement-unicode" id="dec55">&minus;</span> <span class="no-of-item" id="no-of-item55">0</span> <span class="increment-unicode" id="inc55">&plus;</span></p>
+        <p>Kurta(set)(Rs 49) <span class="decrement-unicode" id="dec56">&minus;</span> <span class="no-of-item" id="no-of-item56">0</span> <span class="increment-unicode" id="inc56">&plus;</span></p>
+        <p>Kurta(Rs 39) <span class="decrement-unicode" id="dec57">&minus;</span> <span class="no-of-item" id="no-of-item57">0</span> <span class="increment-unicode" id="inc57">&plus;</span></p>
+        <p>Paijama(Rs 12) <span class="decrement-unicode" id="dec58">&minus;</span> <span class="no-of-item" id="no-of-item58">0</span> <span class="increment-unicode" id="inc58">&plus;</span></p>
+        <p>Kurti(set)(Rs 49) <span class="decrement-unicode" id="dec59">&minus;</span> <span class="no-of-item" id="no-of-item59">0</span> <span class="increment-unicode" id="inc59">&plus;</span></p>
+        <p>Kurti(Rs 39) <span class="decrement-unicode" id="dec60">&minus;</span> <span class="no-of-item" id="no-of-item60">0</span> <span class="increment-unicode" id="inc60">&plus;</span></p>
+        <p>Dupatta(Rs 10) <span class="decrement-unicode" id="dec61">&minus;</span> <span class="no-of-item" id="no-of-item61">0</span> <span class="increment-unicode" id="inc61">&plus;</span></p>
+        <p>Saree m/h(Rs 49) <span class="decrement-unicode" id="dec62">&minus;</span> <span class="no-of-item" id="no-of-item62">0</span> <span class="increment-unicode" id="inc62">&plus;</span></p>
+        <p>Saree Heavy(Rs 69) <span class="decrement-unicode" id="dec63">&minus;</span> <span class="no-of-item" id="no-of-item63">0</span> <span class="increment-unicode" id="inc63">&plus;</span></p>
+        <p>Leggings(Rs 15) <span class="decrement-unicode" id="dec64">&minus;</span> <span class="no-of-item" id="no-of-item64">0</span> <span class="increment-unicode" id="inc64">&plus;</span></p>
+        <p>Salwar Suit(Rs 49) <span class="decrement-unicode" id="dec65">&minus;</span> <span class="no-of-item" id="no-of-item65">0</span> <span class="increment-unicode" id="inc65">&plus;</span></p>
+        <p>Bed Sheet(Rs 30) <span class="decrement-unicode" id="dec66">&minus;</span> <span class="no-of-item" id="no-of-item66">0</span> <span class="increment-unicode" id="inc66">&plus;</span></p>
+        <p>Towel(Rs 15) <span class="decrement-unicode" id="dec67">&minus;</span> <span class="no-of-item" id="no-of-item67">0</span> <span class="increment-unicode" id="inc67">&plus;</span></p>
+        <p>Pillow Cover(Rs 10) <span class="decrement-unicode" id="dec68">&minus;</span> <span class="no-of-item" id="no-of-item68">0</span> <span class="increment-unicode" id="inc68">&plus;</span></p>
+      </div> 
+      <div id="dryclean-cart"><!----DRY CLEAN CART---->
+        <p>Shirt/T-shirt(Rs 39) <span class="decrement-unicode" id="dec69">&minus;</span> <span class="no-of-item" id="no-of-item69">0</span> <span class="increment-unicode" id="inc69">&plus;</span></p>
+        <p>Suit 2pc(Rs 269) <span class="decrement-unicode" id="dec70">&minus;</span> <span class="no-of-item" id="no-of-item70">0</span> <span class="increment-unicode" id="inc70">&plus;</span></p>
+        <p>Suit 3pc(Rs 299) <span class="decrement-unicode" id="dec71">&minus;</span> <span class="no-of-item" id="no-of-item71">0</span> <span class="increment-unicode" id="inc71">&plus;</span></p>
+        <p>Blazzer(Rs 119) <span class="decrement-unicode" id="dec72">&minus;</span> <span class="no-of-item" id="no-of-item72">0</span> <span class="increment-unicode" id="inc72">&plus;</span></p>
+        <p>Waist Coat(Rs 99) <span class="decrement-unicode" id="dec73">&minus;</span> <span class="no-of-item" id="no-of-item73">0</span> <span class="increment-unicode" id="inc73">&plus;</span></p>
+        <p>Kurta(set)(Rs 129) <span class="decrement-unicode" id="dec74">&minus;</span> <span class="no-of-item" id="no-of-item74">0</span> <span class="increment-unicode" id="inc74">&plus;</span></p>
+        <p>Prince Coat(Rs 249) <span class="decrement-unicode" id="dec75">&minus;</span> <span class="no-of-item" id="no-of-item75">0</span> <span class="increment-unicode" id="inc75">&plus;</span></p>
+        <p>Saree m/h(Rs 149) <span class="decrement-unicode" id="dec76">&minus;</span> <span class="no-of-item" id="no-of-item76">0</span> <span class="increment-unicode" id="inc76">&plus;</span></p>
+        <p>Saree Heavy(Rs 209) <span class="decrement-unicode" id="dec77">&minus;</span> <span class="no-of-item" id="no-of-item77">0</span> <span class="increment-unicode" id="inc77">&plus;</span></p>
+        <p>Kurti(set)(Rs 129) <span class="decrement-unicode" id="dec78">&minus;</span> <span class="no-of-item" id="no-of-item78">0</span> <span class="increment-unicode" id="inc78">&plus;</span></p>
+        <p>Lehenga Heavy(Rs 399) <span class="decrement-unicode" id="dec79">&minus;</span> <span class="no-of-item" id="no-of-item79">0</span> <span class="increment-unicode" id="inc79">&plus;</span></p>
+        <p>Lehenga Bridal(Rs 799) <span class="decrement-unicode" id="dec80">&minus;</span> <span class="no-of-item" id="no-of-item80">0</span> <span class="increment-unicode" id="inc80">&plus;</span></p>
+        <p>Gown Heavy(Rs 399) <span class="decrement-unicode" id="dec81">&minus;</span> <span class="no-of-item" id="no-of-item81">0</span> <span class="increment-unicode" id="inc81">&plus;</span></p>
+        <p>Gown(Rs 299) <span class="decrement-unicode" id="dec82">&minus;</span> <span class="no-of-item" id="no-of-item82">0</span> <span class="increment-unicode" id="inc82">&plus;</span></p>
+      </div>
+      <p class="total">Total <span id="total">0</span></p><!----THE FINAL TOTAL OF ALL THE ITEMS---->
+      <button type="submit" id="btn">Proceed</button> 
+    </body>
+    <script src="index.js"></script>
+</html>

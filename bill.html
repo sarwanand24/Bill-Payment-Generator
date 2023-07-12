@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bill Payment</title>
+          <meta charset="UTF-8">
+          <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+          <meta name="description" content="Laundry Walaa Bill Generator">
+          <meta name="viewport" content="width=device-width , initial-scale=1, user-scalable = 0">
+          <link rel="stylesheet" href="bill.css"/>
+    </head>
+    
+    <body>
+     <h1>LAUNDRY WALAA</h1>
+     <p><span class="cmpy-details">Address: Sonamukhi, Jholi, P/O Hijli</span> <span class="cstm-details">Bill To: <span id="cstm-name"></span></span></p>
+     <p><span class="cmpy-details2">Mob: 7550912384</span> <span class="cstm-details2">Mob: <span id="cstm-mob"></span></span></p>
+     <div id="iron-heading"><!----IRON CATEGORY CHART-->
+        <p class="ctg">Iron</p>
+        <p class="sub-ctg">Items <span class="qty">Qty</span> <span class="price">Price</span></p>
+        <p class="list" id="list1">Shirt/T-shirt(Rs 07) <span class="quant" id="quant1"></span> <span class="prc" id="prc1">0</span> </p>
+        <p class="list" id="list2">Jeans/Formal(Rs 07) <span class="quant" id="quant2"></span> <span class="prc" id="prc2">0</span> </p>
+        <p class="list" id="list3">Shorts(Rs 05) <span class="quant" id="quant3"></span> <span class="prc" id="prc3">0</span> </p>
+        <p class="list" id="list4">Trouser/Track pant(Rs 07) <span class="quant" id="quant4"></span> <span class="prc" id="prc4">0</span> </p>
+        <p class="list" id="list5">Kurta(set)(Rs 20) <span class="quant" id="quant5"></span> <span class="prc" id="prc5">0</span> </p>
+        <p class="list" id="list6">Kurta(Rs 15) <span class="quant" id="quant6"></span> <span class="prc" id="prc6">0</span> </p>
+        <p class="list" id="list7">Paijama(Rs 07) <span class="quant" id="quant7"></span> <span class="prc" id="prc7">0</span> </p>
+        <p class="list" id="list8">Kurti(set)(Rs 20) <span class="quant" id="quant8"></span> <span class="prc" id="prc8">0</span> </p>
+        <p class="list" id="list9">Kurti(Rs 20) <span class="quant" id="quant9"></span> <span class="prc" id="prc9">0</span> </p>
+        <p class="list" id="list10">Dupatta(Rs 05) <span class="quant" id="quant10"></span> <span class="prc" id="prc10">0</span> </p>
+        <p class="list" id="list11">Saree m/h(Rs 20) <span class="quant" id="quant11"></span> <span class="prc" id="prc11">0</span> </p>
+        <p class="list" id="list12">Saree Heavy(Rs 30) <span class="quant" id="quant12"></span> <span class="prc" id="prc12">0</span> </p>
+        <p class="list" id="list13">Leggings(Rs 05) <span class="quant" id="quant13"></span> <span class="prc" id="prc13">0</span> </p>
+        <p class="list" id="list14">Salwar Suit(Rs 20) <span class="quant" id="quant14"></span> <span class="prc" id="prc14">0</span> </p>
+        <p class="list" id="list15">Bed Sheet(Rs 10) <span class="quant" id="quant15"></span> <span class="prc" id="prc15">0</span> </p>
+        <p class="list" id="list16">Towel(Rs 05) <span class="quant" id="quant16"></span> <span class="prc" id="prc16">0</span> </p>
+        <p class="list" id="list17">Pillow Cover(Rs 01) <span class="quant" id="quant17"></span> <span class="prc" id="prc17">0</span> </p>
+     </div>
+     <div id="nwash-heading">  <!----NORMAL WASH CATEGORY CHART----> 
+        <p class="ctg">Normal Wash</p>
+        <p class="sub-ctg">Items <span class="qty">Qty</span> <span class="price">Price</span></p>
+        <p class="list" id="list18">Shirt/T-shirt(Rs 06) <span class="quant" id="quant18"></span> <span class="prc" id="prc18">0</span> </p>
+        <p class="list" id="list19">Jeans/Formal(Rs 07) <span class="quant" id="quant19"></span> <span class="prc" id="prc19">0</span> </p>
+        <p class="list" id="list20">Shorts(Rs 05) <span class="quant" id="quant20"></span> <span class="prc" id="prc20">0</span> </p>
+        <p class="list" id="list21">Trouser/Track pant(Rs 07) <span class="quant" id="quant21"></span> <span class="prc" id="prc21">0</span> </p>
+        <p class="list" id="list22">Kurta(set)(Rs 39) <span class="quant" id="quant22"></span> <span class="prc" id="prc22">0</span> </p>
+        <p class="list" id="list23">Kurta(Rs 29) <span class="quant" id="quant23"></span> <span class="prc" id="prc23">0</span> </p>
+        <p class="list" id="list24">Paijama(Rs 07) <span class="quant" id="quant24"></span> <span class="prc" id="prc24">0</span> </p>
+        <p class="list" id="list25">Kurti(set)(Rs 39) <span class="quant" id="quant25"></span> <span class="prc" id="prc25">0</span> </p>
+        <p class="list" id="list26">Kurti(Rs 29) <span class="quant" id="quant26"></span> <span class="prc" id="prc26">0</span> </p>
+        <p class="list" id="list27">Dupatta(Rs 05) <span class="quant" id="quant27"></span> <span class="prc" id="prc27">0</span> </p>
+        <p class="list" id="list28">Saree m/h(Rs 39) <span class="quant" id="quant28"></span> <span class="prc" id="prc28">0</span> </p>
+        <p class="list" id="list29">Saree Heavy(Rs 59) <span class="quant" id="quant29"></span> <span class="prc" id="prc29">0</span> </p>
+        <p class="list" id="list30">Leggings(Rs 10) <span class="quant" id="quant30"></span> <span class="prc" id="prc30">0</span> </p>
+        <p class="list" id="list31">Salwar Suit(Rs 39) <span class="quant" id="quant31"></span> <span class="prc" id="prc31">0</span> </p>
+        <p class="list" id="list32">Bed Sheet(Rs 20) <span class="quant" id="quant32"></span> <span class="prc" id="prc32">0</span> </p>
+        <p class="list" id="list33">Towel(Rs 10) <span class="quant" id="quant33"></span> <span class="prc" id="prc33">0</span> </p>
+        <p class="list" id="list34">Pillow Cover(Rs 05) <span class="quant" id="quant34"></span> <span class="prc" id="prc34">0</span> </p>
+      </div> 
+      <div id="owash-heading">  <!----ORGANIC WASH CATEGORY CHART----> 
+        <p class="ctg">Organic Wash</p>
+        <p class="sub-ctg">Items <span class="qty">Qty</span> <span class="price">Price</span></p>
+        <p class="list" id="list35">Shirt/T-shirt(Rs 12) <span class="quant" id="quant35"></span> <span class="prc" id="prc35">0</span> </p>
+        <p class="list" id="list36">Jeans/Formal(Rs 12) <span class="quant" id="quant36"></span> <span class="prc" id="prc36">0</span> </p>
+        <p class="list" id="list37">Shorts(Rs 10) <span class="quant" id="quant37"></span> <span class="prc" id="prc37">0</span> </p>
+        <p class="list" id="list38">Trouser/Track pant(Rs 12) <span class="quant" id="quant38"></span> <span class="prc" id="prc38">0</span> </p>
+        <p class="list" id="list39">Kurta(set)(Rs 49) <span class="quant" id="quant39"></span> <span class="prc" id="prc39">0</span> </p>
+        <p class="list" id="list40">Kurta(Rs 39) <span class="quant" id="quant40"></span> <span class="prc" id="prc40">0</span> </p>
+        <p class="list" id="list41">Paijama(Rs 12) <span class="quant" id="quant41"></span> <span class="prc" id="prc41">0</span> </p>
+        <p class="list" id="list42">Kurti(set)(Rs 49) <span class="quant" id="quant42"></span> <span class="prc" id="prc42">0</span> </p>
+        <p class="list" id="list43">Kurti(Rs 39) <span class="quant" id="quant43"></span> <span class="prc" id="prc43">0</span> </p>
+        <p class="list" id="list44">Dupatta(Rs 10) <span class="quant" id="quant44"></span> <span class="prc" id="prc44">0</span> </p>
+        <p class="list" id="list45">Saree m/h(Rs 49) <span class="quant" id="quant45"></span> <span class="prc" id="prc45">0</span> </p>
+        <p class="list" id="list46">Saree Heavy(Rs 69) <span class="quant" id="quant46"></span> <span class="prc" id="prc46">0</span> </p>
+        <p class="list" id="list47">Leggings(Rs 15) <span class="quant" id="quant47"></span> <span class="prc" id="prc47">0</span> </p>
+        <p class="list" id="list48">Salwar Suit(Rs 49) <span class="quant" id="quant48"></span> <span class="prc" id="prc48">0</span> </p>
+        <p class="list" id="list49">Bed Sheet(Rs 30) <span class="quant" id="quant49"></span> <span class="prc" id="prc49">0</span> </p>
+        <p class="list" id="list50">Towel(Rs 15) <span class="quant" id="quant50"></span> <span class="prc" id="prc50">0</span> </p>
+        <p class="list" id="list51">Pillow Cover(Rs 10) <span class="quant" id="quant51"></span> <span class="prc" id="prc51">0</span> </p>
+      </div> 
+      <div id="pwash-heading">  <!----PREMIUM WASH CATEGORY CHART----> 
+        <p class="ctg">Premium Wash</p>
+        <p class="sub-ctg">Items <span class="qty">Qty</span> <span class="price">Price</span></p>
+        <p class="list" id="list52">Shirt/T-shirt(Rs 12) <span class="quant" id="quant52"></span> <span class="prc" id="prc52">0</span> </p>
+        <p class="list" id="list53">Jeans/Formal(Rs 12) <span class="quant" id="quant53"></span> <span class="prc" id="prc53">0</span> </p>
+        <p class="list" id="list54">Shorts(Rs 10) <span class="quant" id="quant54"></span> <span class="prc" id="prc54">0</span> </p>
+        <p class="list" id="list55">Trouser/Track pant(Rs 12) <span class="quant" id="quant55"></span> <span class="prc" id="prc55">0</span> </p>
+        <p class="list" id="list56">Kurta(set)(Rs 49) <span class="quant" id="quant56"></span> <span class="prc" id="prc56">0</span> </p>
+        <p class="list" id="list57">Kurta(Rs 39) <span class="quant" id="quant57"></span> <span class="prc" id="prc57">0</span> </p>
+        <p class="list" id="list58">Paijama(Rs 12) <span class="quant" id="quant58"></span> <span class="prc" id="prc58">0</span> </p>
+        <p class="list" id="list59">Kurti(set)(Rs 49) <span class="quant" id="quant59"></span> <span class="prc" id="prc59">0</span> </p>
+        <p class="list" id="list60">Kurti(Rs 39) <span class="quant" id="quant60"></span> <span class="prc" id="prc60">0</span> </p>
+        <p class="list" id="list61">Dupatta(Rs 10) <span class="quant" id="quant61"></span> <span class="prc" id="prc61">0</span> </p>
+        <p class="list" id="list62">Saree m/h(Rs 49) <span class="quant" id="quant62"></span> <span class="prc" id="prc62">0</span> </p>
+        <p class="list" id="list63">Saree Heavy(Rs 69) <span class="quant" id="quant63"></span> <span class="prc" id="prc63">0</span> </p>
+        <p class="list" id="list64">Leggings(Rs 15) <span class="quant" id="quant64"></span> <span class="prc" id="prc64">0</span> </p>
+        <p class="list" id="list65">Salwar Suit(Rs 49) <span class="quant" id="quant65"></span> <span class="prc" id="prc65">0</span> </p>
+        <p class="list" id="list66">Bed Sheet(Rs 30) <span class="quant" id="quant66"></span> <span class="prc" id="prc66">0</span> </p>
+        <p class="list" id="list67">Towel(Rs 15) <span class="quant" id="quant67"></span> <span class="prc" id="prc67">0</span> </p>
+        <p class="list" id="list68">Pillow Cover(Rs 10) <span class="quant" id="quant68"></span> <span class="prc" id="prc68">0</span> </p>
+      </div> 
+      <div id="dryclean-heading"><!----DRY CLEAN CATEGORY CHART---->
+        <p class="ctg">Dry Clean</p>
+        <p class="sub-ctg">Items <span class="qty">Qty</span> <span class="price">Price</span></p>
+        <p class="list" id="list69">Shirt/T-shirt(Rs 39) <span class="quant" id="quant69"></span> <span class="prc" id="prc69">0</span> </p>
+        <p class="list" id="list70">Suit 2pc(Rs 269) <span class="quant" id="quant70"></span> <span class="prc" id="prc70">0</span> </p>
+        <p class="list" id="list71">Suit 3pc(Rs 299) <span class="quant" id="quant71"></span> <span class="prc" id="prc71">0</span> </p>
+        <p class="list" id="list72">Blazzer(Rs 119) <span class="quant" id="quant72"></span> <span class="prc" id="prc72">0</span> </p>
+        <p class="list" id="list73">Waist Coat(Rs 99) <span class="quant" id="quant73"></span> <span class="prc" id="prc73">0</span> </p>
+        <p class="list" id="list74">Kurta(set)(Rs 129) <span class="quant" id="quant74"></span> <span class="prc" id="prc74">0</span> </p>
+        <p class="list" id="list75">Prince Coat(Rs 249) <span class="quant" id="quant75"></span> <span class="prc" id="prc75">0</span> </p>
+        <p class="list" id="list76">Saree m/h(Rs 149) <span class="quant" id="quant76"></span> <span class="prc" id="prc76">0</span> </p>
+        <p class="list" id="list77">Saree Heavy(Rs 209) <span class="quant" id="quant77"></span> <span class="prc" id="prc77">0</span> </p>
+        <p class="list" id="list78">Kurti(set)(Rs 129) <span class="quant" id="quant78"></span> <span class="prc" id="prc78">0</span> </p>
+        <p class="list" id="list79">Lehenga Heavy(Rs 399) <span class="quant" id="quant79"></span> <span class="prc" id="prc79">0</span> </p>
+        <p class="list" id="list80">Lehenga Bridal(Rs 799) <span class="quant" id="quant80"></span> <span class="prc" id="prc80">0</span> </p>
+        <p class="list" id="list81">Gown Heavy(Rs 399) <span class="quant" id="quant81"></span> <span class="prc" id="prc81">0</span> </p>
+        <p class="list" id="list82">Gown(Rs 299) <span class="quant" id="quant82"></span> <span class="prc" id="prc82">0</span> </p>
+      </div>
+     <p class="total">Total <span id="quant-total">0</span> <span id="total">0</span></p><!----THE FINAL TOTAL OF ALL THE ITEMS---->
+    <p class="note">Thankyou For Washing Your Clothes From Laundry Walaa</p>
+    </body>
+    <script src="bill.js"></script>
+</html>
